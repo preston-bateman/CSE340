@@ -1,6 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
 /******* Change Box Model ***************/
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+/* General Tags */
+
+html {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-weight: 900;
+  background-image: url("../images/site/checkerboard.jpg");
+  letter-spacing: .2;
+}
+
+body{
+  width: 93%;
+  background-color: white;
+  border: 6px solid #0070bb;
+  border-radius: 3px;
+  padding: 1rem;
+  
+
+}
+
+/* Header */
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: end;
+  color: black;
+  height: 90px;
+}
+
+.siteName a{
+  font-size: 2.5rem;
+  color: black;
+  text-decoration: none;
+}
+
+.siteName a:hover{
+  text-decoration: underline;
+}
+
+.siteName a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#tools{
+  justify-self: end;
+  font-size: 1.5rem;
+}
+
+#tools a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#tools a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+
+#nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  background-color: #070238;
+  height: 80px;
+  color: white;
+  font-size: 1.1rem;
+}
+
+#nav a, a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+#nav a:hover{
+  text-decoration: underline;
+}
+
+#nav li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Upper Section */
+
+#upper-page {
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 25px 0;
+  height: 300px;
+}
+
+#car-background {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  max-width: max-content;
+}
+
+#call {
+  color: #0070bb;
+  background-color: rgba(250, 250, 250, .75);
+  position: absolute;
+  top: 0;
+  left: 50px;
+  padding: 5px;
+  width: auto;
+  max-height: fit-content;
+}
+
+#call h2 {
+  font-size: 1.9rem;
+}
+
+#call p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+#own-today {
+  margin-top: 30px;
+}
+
+/* Lower Section */
+
+#lower-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 47px;
+}
+
+#upgrades-square {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+#upgrades-square div {
+  display: flex;
+  flex-direction: column;
+}
+
+.upgrade-card {
+  width: 100%;
+  max-width: 250px;
+}
+
+.image-container {
+  width: 100%;
+  background-color: #0070bb;
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  display: block;
+  max-height: 120px;
+  width: 40%;
+  padding: 10px 0;
+}
+
+#reviews ul li{
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 99%;
+  }
+  
+  #lower-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 47px;
+  }
 }
