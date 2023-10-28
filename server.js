@@ -22,9 +22,13 @@ app.set("layout", "./layouts/layout")
 /* ***********************
  * Routes
  *************************/
+
 app.use(static)
 //Index Route
-app.get("/index", baseController.buildHome)
+app.get("/", baseController.buildHome)
+
+//Inventory Routes
+app.use("/inv", inventoryRoute)
 
 /* ***********************
  * Local Server Information
