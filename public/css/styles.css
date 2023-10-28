@@ -65,9 +65,9 @@ header{
 
 /* Navigation */
 
-#nav {
+nav ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   list-style-type: none;
   background-color: #070238;
   height: 80px;
@@ -75,16 +75,16 @@ header{
   font-size: 1.1rem;
 }
 
-#nav a, a:visited{
+nav a, a:visited{
   text-decoration: none;
   color: white;
 }
 
-#nav a:hover{
+nav a:hover{
   text-decoration: underline;
 }
 
-#nav li {
+nav li {
   text-align: center;
   display: flex;
   justify-content: center;
